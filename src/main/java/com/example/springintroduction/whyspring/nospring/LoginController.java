@@ -16,6 +16,7 @@ public class LoginController {
     }
 
     public static void main(String[] args) {
+        // 스프링을 쓰지 않을 경우 new 생성자를 안에 만들고 또 안에 만드는 작업을 반복해야될 경우도 생긴다.
         LoginController loginController = new LoginController(new Login(new NaverLogin(), new TokenManager(),
                 new User(new UserRepository())));
 
