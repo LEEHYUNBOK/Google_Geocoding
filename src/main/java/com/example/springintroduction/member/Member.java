@@ -13,7 +13,7 @@ import org.hibernate.validator.constraints.Length;
 @Getter
 // 파라미터 없는 생성자 생성
 @NoArgsConstructor
-// 파라미터 모든 다 있는 생성자 생성
+// 모든 필드 값을 파라미터로 받는 생성자 생성
 @AllArgsConstructor
 public class Member {
 
