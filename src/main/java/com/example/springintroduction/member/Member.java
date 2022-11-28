@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.validator.constraints.Length;
 
+import javax.validation.constraints.NotEmpty;
+
 // lombok ex)
 // Setter를 자동적으로 생성
 @Setter
@@ -19,9 +21,11 @@ public class Member {
 
     // 조건문 선언
     @Length(min = 2, max = 8, message = "2~8자 사이로 하세요")
+    @NotEmpty(message = "id는 필수 값입니다.")
     private String username;
 
     @Length(min = 2, max = 8, message = "2~8자 사이로 하세요")
+    @NotEmpty(message = "id는 필수 값입니다.")
     private String password;
 
 }
